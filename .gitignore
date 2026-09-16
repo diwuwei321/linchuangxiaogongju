@@ -1,0 +1,6 @@
+# 项目记忆与本地配置（非版本内容）
+.workbuddy/
+
+# 系统/编辑临时文件
+Thumbs.db
+.DS_Store

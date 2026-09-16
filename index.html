@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="vkroYzWJJuhOGCf6SzOtPI">
+<head data-page-node-id="S6JCL2gh9p2MCahmAwLmRV">
+  <meta charset="UTF-8" data-page-node-id="4EvkKEqvbeOzxnDzYLZAlP">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="5CHKswMIvhrne9e2Ao0WWu">
+  <title>临床速查助手</title>
+  <link rel="stylesheet" href="css/style.css" data-page-node-id="cHvjf0qmhJkOx0PGYnPGff">
+</head>
+<body class="font-mid" data-page-node-id="SGN668qHQo6ZxhthN5OHqR">
+
+  <!-- 顶栏 -->
+  <header class="topbar" data-page-node-id="uq2L71Sso62fugvO6pzm6g">
+    <div class="topbar-logo" data-page-node-id="ady2eOEuAqdb7uOy0JY1nv">
+      <span class="logo-icon" data-page-node-id="AyyVjH2evan1nrwwXG2vtu">✚</span>
+      <span class="logo-text" data-page-node-id="HoazMty7nAFbJVpbAPVgb4">临床速查助手</span>
+      <span class="logo-badge" data-page-node-id="bLsRyzFvVnfrAH19wlfy7L">Web</span>
+    </div>
+    <div class="topbar-search" data-page-node-id="B6qYtFB3SSvUmiRXjA9f1C">
+      <input type="text" id="globalSearch" placeholder="搜索名称或拼音首字母，如 qttxy" data-page-node-id="SM2pFAILA2ETV3CCVz6rlM">
+    </div>
+    <div class="topbar-actions" data-page-node-id="OQGxNqoBxAHNiaBbh1sYZe">
+      <button class="btn btn-red" id="btnQuick" data-page-node-id="gEQ8CoVhEoeIhsuOMophwt">⚡ 速查提示</button>
+      <div class="font-switch" data-page-node-id="TUWcHPLHTRCgc8bCGgIq0g">
+        <span data-page-node-id="bocq6JNQG6wYAE5jTPKz4a">字号</span>
+        <button class="font-btn" data-size="small" data-page-node-id="qy4Ypo0QaftMuvKpEZYlHy">小</button>
+        <button class="font-btn active" data-size="mid" data-page-node-id="MHPj9EYk4W7o1wJcKhkzF1">中</button>
+        <button class="font-btn" data-size="large" data-page-node-id="ir8JAGX7mEDpi5AlTurI81">大</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout" data-page-node-id="aoiWEVo0srssZSKMQcTQXF">
+
+    <!-- 左侧菜单 -->
+    <nav class="sidebar" id="sidebar" data-page-node-id="35ydmYVaItmrC7y0nOwwSA">
+      <button class="tab-item active" data-tab="疾病速查" data-page-node-id="YjlVHYfRBfuq4rj8CDUvN9"><span class="tab-icon" data-page-node-id="bkztLH5Wmj3jY83DR8LUHj">🔎</span>疾病速查</button>
+      <button class="tab-item" data-tab="症状速查" data-page-node-id="m0FKw2B7pBrMXOvhCSOBYB"><span class="tab-icon" data-page-node-id="4OKH5x2WvAreG7QfL9PkZf">🩺</span>症状速查</button>
+      <button class="tab-item" data-tab="检查项目" data-page-node-id="JnWBuAL1pHpCZ0SpFkFdJO"><span class="tab-icon" data-page-node-id="KSfjhzWP5rkmAaV9qXJEWn">📋</span>检查项目</button>
+      <button class="tab-item" data-tab="药品手册" data-page-node-id="TKhcChDfljcCMLR0NteN8Q"><span class="tab-icon" data-page-node-id="Ee4v1FvyZzCtpE7yk1omzG">💊</span>药品手册</button>
+      <button class="tab-item" data-tab="计算工具" data-page-node-id="OvMalFAw1qFatIqselyTSH"><span class="tab-icon" data-page-node-id="hyMDd2QNiS81q3S83CNUNC">🧮</span>计算工具</button>
+      <button class="tab-item" data-tab="收藏夹" data-page-node-id="YEgfOnNesvSyfymUWUddNl"><span class="tab-icon" data-page-node-id="XYjBJtQo6GpgFyWlK0CFKv">⭐</span>收藏夹</button>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="content" data-page-node-id="94yhP6q8Aj0sYKf5HwvkjX">
+
+      <!-- 左栏：筛选列表 -->
+      <aside class="list-panel" data-page-node-id="JwWRq6Vy5E5SxdTiGMhdAK">
+        <div class="panel-title" data-page-node-id="mhKrGES5BTGoplR3yYTHWn">疾病数据</div>
+        <select id="categorySelect" class="category-select" data-page-node-id="5O3c0qCR1IVi9Wed5ImwIM">
+          <!-- 由 JS 填充 -->
+        </select>
+        <div class="search-box" data-page-node-id="CgSc4GcgLXbDIM7sm2jqHV">
+          <input type="text" id="listSearch" placeholder="搜索当前分类（支持拼音首字母）" data-page-node-id="UiHgj1n9rl92keX3Jt2Ud1">
+        </div>
+        <div class="list-count" id="listCount" data-page-node-id="oE949VHPnD3GtacwFqOOHa">0 种疾病</div>
+        <ul class="item-list" id="itemList" data-page-node-id="shDo5dHUaVDE2FZqvXiN8q">
+          <!-- 由 JS 填充 -->
+        </ul>
+      </aside>
+
+      <!-- 右栏：详情 -->
+      <section class="detail-panel" data-page-node-id="EyuNcPYYz0jxjDjaPEaL5G">
+        <div class="detail-topbar" data-page-node-id="FG62EQNdTCSa97Gq0xmEmX">
+          <span class="detail-meta" id="detailMeta" data-page-node-id="RFVPGuABYA9ZXAuEW8Ef1c"></span>
+        </div>
+        <div class="detail-body" id="detailBody" data-page-node-id="HmHzuSptCi3cOL4ibBT3qy">
+          <div class="empty-hint" id="detailEmpty" data-page-node-id="HtFIDiCN4LtcW4MRC7FVbg">请从左侧列表选择查看疾病诊疗要点、检查与医嘱示例</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
